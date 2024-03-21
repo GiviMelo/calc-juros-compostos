@@ -21,7 +21,7 @@ int main() {
 		cout << "Valor a ser investido (em R$): ";
 		cin >> C;
 
-		cout << "Taxa anual: ";
+		cout << "Taxa anual (em decimal): ";
 		cin >> i;
 
 		cout << "Tempo (em anos): ";
@@ -41,7 +41,7 @@ int main() {
 			break;
 		}
 	}
-	
+
 
 
 	return 0;
@@ -49,7 +49,7 @@ int main() {
 
 double function(double C, double i, int t) {
 
-	double res = C + pow((1 + i), t);
+	double res = C * pow((1 + i), t);
 
 	return res;
 }
